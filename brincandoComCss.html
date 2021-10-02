@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brincando com CSS</title> 
+    <style>
+        .pinguim{
+            --pele:black; 
+            --barriga:white;
+            --bico:orange;
+
+            position:relative;
+            margin: auto;
+            margin-top: 5%;
+            display: block;
+            width: 300px;
+            height: 300px;
+        }
+
+        .pinguim-top{
+            top:10%;
+            left:25%;
+            background: var(--pele, gray);
+            width: 50%;
+            height: 45%;
+            border-radius: 70% 70% 60% 60%;
+        }
+
+         .pinguim-bottom{
+             top:40%;
+             left:23.5%;
+             background: var(--pele, gray);
+             width: 53%;
+             height: 45%;
+             border-radius: 70% 70% 100% 100%;             
+         }
+
+         .mao-direita{
+             top:0%;
+             left: -5%;
+             background: var(--pele, gray);
+             width: 30%;
+             height: 60%;
+             border-radius: 30% 30% 120% 30%;
+             transform: rotate(45deg);
+             z-index: -1;
+         }
+
+         .mao-esquerda{
+            top: 0%;
+            left:75%;
+            background: var(--pele, gray);
+            width: 30%;
+            height: 60%;
+            border-radius: 30%  30% 30% 120%;
+            transform:rotate(-45deg);
+            z-index: -1; 
+         }
+         .bochecha-direita{
+             top: 15%;
+             left: 35%;
+             background: var(--barriga, white);
+             width: 60%;
+             height: 70%;
+             border-radius: 70% 70% 60% 60%;
+         }
+
+         .bochecha-esquerda{
+             top: 15%;
+             left: 2.5%;
+             background: var(--barriga, white);
+             width: 60%;
+             height: 70%;
+             border-radius: 70% 70% 60% 60%;
+         }
+
+         .barriga{
+             top: 60%;left: 2.5%;background: var(--barriga, white);
+             width: 95%;
+             height: 100%;
+             border-radius: 120% 120% 100% 100%;
+         }
+
+         .pe-direito{
+             top:85%;
+             left: 60%;
+             background: var(--bico, orange);
+             width: 15%;
+             height: 30%;
+             border-radius: 50%;
+             transform: rotate(-80deg);
+             z-index: -2222;
+         }
+
+         .pe-esquerdo{
+             top: 85%;
+             left: 25%;
+             background: var(--bico, orange);
+             width: 15%;
+             height: 30%;
+             border-radius: 50%;
+             transform: rotate(80deg);
+             z-index: -2222;
+         }
+
+           .olho-direito{
+               top: 45%;
+               left: 60%;
+               background: var(--pele, black);
+               width: 15%;
+               height: 17%;
+               border-radius: 50%;
+           } 
+
+           .olho-esquerdo{
+               top: 45%;
+               left: 25%;
+               background: var(--pele, black);
+               width: 15%;
+               height: 17%;
+               border-radius: 50%;
+           } 
+
+           .brilho{
+               top:25%;
+               left:15%;
+               background: white;
+               width: 35%;
+               height: 35%;
+               border-radius: 50%;
+                 }
+
+              .corar-direito{
+                  top: 65%;
+                  left: 15%;
+                  background: pink;
+                  width: 15%;
+                  height: 10%;
+                  border-radius: 50%;
+              }   
+
+              .corar-esquerdo{
+                  top: 65%;
+                  left: 70%;
+                  background: pink;
+                  width: 15%;
+                  height: 10%;
+                  border-radius: 50%;
+              }  
+
+              .bico-de-cima{
+                  top: 60%;
+                  left: 40%;
+                  background: var(--bico, orange);
+                  width: 20%;
+                  height: 10%;
+                  border-radius: 50%;
+              }
+
+              .bico-de-baixo{
+                  top: 60%;
+                  left: 42%;
+                  background: var(--bico, orange);
+                  width: 16%;
+                  height: 10%;
+                  border-radius: 50%;
+              }
+
+              body{
+                  background-color:#c6faf1;
+              }
+
+                .pinguim * {
+                    position: absolute;
+                    
+                }
+          
+    </style>
+    
+ </head>
+<body>
+    <div class="pinguim">
+        <div class="pinguim-bottom">
+            <div class="mao-direita"></div>
+            <div class="mao-esquerda"></div>
+            <div class="pe-direito"></div>
+            <div class="pe-esquerdo"></div>
+        </div>
+
+        <div class="pinguim-top">
+            <div class="bochecha-direita"></div>
+            <div class="bochecha-esquerda"></div>
+            <div class="barriga"></div>
+            <div class="olho-direito">
+                <div class="brilho"></div>
+            </div>
+
+            <div class="olho-esquerdo">
+                <div class="brilho"></div>
+            </div>
+            <div class="corar-esquerdo"></div>
+            <div class="corar-direito"></div>
+            <div class="bico-de-cima"></div>
+            <div class="bico-de-baixo"></div>
+        </div>
+    </div>
+</body>
+
+</html>
